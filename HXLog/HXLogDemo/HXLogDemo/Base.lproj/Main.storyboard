@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wDJ-6d-tag">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Log Demo-->
+        <scene sceneID="a5n-FU-Qwk">
+            <objects>
+                <tableViewController id="av2-qv-mlY" customClass="LogTableViewController" customModule="HXLogDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="qts-hU-QRq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LogTableViewCell" rowHeight="35" id="90G-f2-sNV" customClass="LogTableViewCell" customModule="HXLogDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="35"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="90G-f2-sNV" id="slJ-sj-Gyy">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="35"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="02:32:20.999:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Mo-gN-hKG">
+                                            <rect key="frame" x="15" y="10" width="86" height="14.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="86" id="taG-V5-wVl"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uD2-Rh-j79">
+                                            <rect key="frame" x="101" y="10" width="298" height="15"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hhN-Wq-FgP">
+                                            <rect key="frame" x="15" y="34.5" width="399" height="0.5"/>
+                                            <color key="backgroundColor" red="0.79607843140000001" green="0.79607843140000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="0.5" id="D4D-iv-uvF"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="0Mo-gN-hKG" firstAttribute="top" secondItem="slJ-sj-Gyy" secondAttribute="top" constant="10" id="0Kx-ZK-Wvw"/>
+                                        <constraint firstAttribute="bottom" secondItem="hhN-Wq-FgP" secondAttribute="bottom" id="8XV-Hr-4Si"/>
+                                        <constraint firstAttribute="bottom" secondItem="uD2-Rh-j79" secondAttribute="bottom" constant="10" id="Av8-b8-wr5"/>
+                                        <constraint firstItem="hhN-Wq-FgP" firstAttribute="leading" secondItem="slJ-sj-Gyy" secondAttribute="leading" constant="15" id="Oy8-tm-3eH"/>
+                                        <constraint firstItem="uD2-Rh-j79" firstAttribute="top" secondItem="0Mo-gN-hKG" secondAttribute="top" id="TGM-vL-fRo"/>
+                                        <constraint firstAttribute="trailing" secondItem="uD2-Rh-j79" secondAttribute="trailing" constant="15" id="XQo-Xt-Qtk"/>
+                                        <constraint firstItem="uD2-Rh-j79" firstAttribute="leading" secondItem="0Mo-gN-hKG" secondAttribute="trailing" id="k7u-M8-nsZ"/>
+                                        <constraint firstAttribute="trailing" secondItem="hhN-Wq-FgP" secondAttribute="trailing" id="ktS-6f-5IB"/>
+                                        <constraint firstItem="0Mo-gN-hKG" firstAttribute="leading" secondItem="slJ-sj-Gyy" secondAttribute="leading" constant="15" id="yk3-9Z-065"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="logLabel" destination="uD2-Rh-j79" id="qeu-3n-O6w"/>
+                                    <outlet property="timeLabel" destination="0Mo-gN-hKG" id="FZX-0S-0lz"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="av2-qv-mlY" id="CoZ-w4-sJV"/>
+                            <outlet property="delegate" destination="av2-qv-mlY" id="wTb-0r-hyq"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Log Demo" id="6EY-fp-KFL">
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="hx5-yS-vqc">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addLog:" destination="av2-qv-mlY" id="tiH-NO-LlZ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="1Fl-RT-S5A">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="shareLogs:" destination="av2-qv-mlY" id="yDr-Hr-0Gq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5pi-2p-bOG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-182.60869565217394" y="150"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EyN-I8-4ff">
+            <objects>
+                <navigationController id="wDJ-6d-tag" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="yNE-8a-rEi">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="av2-qv-mlY" kind="relationship" relationship="rootViewController" id="Db3-HH-sfG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wtz-Ek-E9Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-965" y="150"/>
+        </scene>
+    </scenes>
+</document>
